@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     
-    <link rel="icon" href="img/centrepr-preview.png">
+    <link rel="icon" href="/img/centrepr-preview.png">
     <title>{{ config('Centre Park', 'Centre Park l Report Ticket System') }}</title>
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.minf.css" rel="stylesheet" />

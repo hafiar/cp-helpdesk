@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-
 use App\Category;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\Traits\MediaUploadingTrait;
@@ -143,6 +142,7 @@ class TicketsController extends Controller
     foreach ($request->input('attachments', []) as $file) {
         $ticket->addMedia(storage_path('tmp/uploads/' . $file))->toMediaCollection('attachments');
     }
+    
 
     return redirect()->route('admin.tickets.index')->with('success', 'Tiket berhasil dibuat.');
 }

@@ -25,6 +25,7 @@
                         <th>
                             {{ trans('cruds.priority.fields.id') }}
                         </th>
+                        
                         <th>
                             {{ trans('cruds.priority.fields.name') }}
                         </th>

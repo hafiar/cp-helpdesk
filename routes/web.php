@@ -2,6 +2,7 @@
 use Illuminate\Support\Facades\Mail;
 use App\Mail\TestEmail;
 
+
 // Route::get('/', 'TicketController@create');
 Route::get('/home', function () {
     $route = Gate::denies('dashboard_access') ? 'admin.tickets.index' : 'admin.home';
@@ -32,7 +33,7 @@ Route::get('/index', function () {
     return view('index');
 });
 
-
+// Route::put('/admin/priorities/{id}', [PriorityController::class, 'update'])->name('admin.priorities.update');
 
 Route::post('tickets/media', 'TicketController@storeMedia')->name('tickets.storeMedia');
 Route::post('tickets/comment/{ticket}', 'TicketController@storeComment')->name('tickets.storeComment');
@@ -59,6 +60,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     // Priorities
     Route::delete('priorities/destroy', 'PrioritiesController@massDestroy')->name('priorities.massDestroy');
     Route::resource('priorities', 'PrioritiesController');
+    
 
     // Categories
     Route::delete('categories/destroy', 'CategoriesController@massDestroy')->name('categories.massDestroy');

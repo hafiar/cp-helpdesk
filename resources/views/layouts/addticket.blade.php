@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <link rel="icon" href="/img/centrepr-preview.png">
-    <title>{{ config('Centre Park', 'Centre Park l Show Report Ticket') }}</title>
+    <title>{{ config('Centre Park', 'Centre Park L Add Ticket System') }}</title>
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.minf.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />

@@ -1,4 +1,4 @@
-@extends('layouts.admin')
+@extends('layouts.addticket')
 @section('content')
 
 <div class="card">

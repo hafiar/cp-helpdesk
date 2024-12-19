@@ -35,8 +35,8 @@
                 </p>
             </div>
             <div class="form-group {{ $errors->has('deadline') ? 'has-error' : '' }}">
-                <label for="deadline">{{ trans('Deadline') }}</label>
-                <input type="text" id="deadline" deadline="deadline" class="form-control" value="{{ old('deadline', isset($priority) ? $priority->deadline : '') }}" required>
+                <label for="deadline">{{ trans('deadline') }}</label>
+                <input type="text" id="deadline" name="deadline" class="form-control deadlinepicker" value="{{ old('deadline', isset($priority) ? $priority->deadline : '') }}">
                 @if($errors->has('deadline'))
                     <em class="invalid-feedback">
                         {{ $errors->first('deadline') }}

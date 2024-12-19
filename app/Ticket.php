@@ -5,6 +5,7 @@ namespace App;
 use App\Scopes\AgentScope;
 use App\Traits\Auditable;
 use App\Notifications\CommentEmailNotification;
+use App\Notifications\AssignedTicketNotification;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
